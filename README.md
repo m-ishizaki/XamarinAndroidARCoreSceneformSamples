@@ -9,6 +9,20 @@ ARCore の Sceneform のサンプルプロジェクト ( https://github.com/goog
 * Sceneform サンプル ( https://developers.google.com/ar/develop/java/sceneform/ )
 * ライセンス ( https://github.com/google-ar/sceneform-android-sdk/blob/master/LICENSE )
 
+## 実ファイルの無いファイル群
+
+classes.jar ファイルは次のアドレスでダウンロードした .aar を .zip にリネームして展開した中の .jar
+https://dl.google.com/dl/android/maven2/com/google/ar/core/1.9.0/core-1.9.0.aar  
+  
+各 .aar ファイルは次のアドレスでダウンロード  
+https://dl.google.com/dl/android/maven2/com/google/ar/sceneform/core/1.9.0/core-1.9.0.aar  
+https://dl.google.com/dl/android/maven2/com/google/ar/sceneform/filament-android/1.9.0/filament-android-1.9.0.aar  
+https://dl.google.com/dl/android/maven2/com/google/ar/sceneform/rendering/1.9.0/rendering-1.9.0.aar  
+https://dl.google.com/dl/android/maven2/com/google/ar/sceneform/sceneform-base/1.9.0/sceneform-base-1.9.0.aar  
+https://dl.google.com/dl/android/maven2/com/google/ar/sceneform/ux/sceneform-ux/1.9.0/sceneform-ux-1.9.0.aar  
+
+andy.sfb ファイルは Android Studio で動かしたプロジェクトの中からコピー  
+
 
 
 

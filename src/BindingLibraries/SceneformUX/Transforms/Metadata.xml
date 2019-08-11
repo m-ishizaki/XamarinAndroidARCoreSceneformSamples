@@ -1,0 +1,9 @@
+﻿<metadata>
+  <remove-node path="/api/package[@name='com.google.ar.sceneform.ux']/class[@name='BaseGesture']" />
+  <remove-node path="/api/package[@name='com.google.ar.sceneform.ux']/class[@name='DragGesture']" />
+  <remove-node path="/api/package[@name='com.google.ar.sceneform.ux']/class[@name='TwistGesture']" />
+  <remove-node path="/api/package[@name='com.google.ar.sceneform.ux']/class[@name='PinchGesture']" />
+
+  <remove-node path="/api/package[@name='com.google.ar.sceneform.ux']/class[@name='GesturePointersUtility']/method[@name='motionEventToPosition' and count(parameter)=2 and parameter[1][@type='android.view.MotionEvent'] and parameter[2][@type='int']]" />
+
+</metadata>

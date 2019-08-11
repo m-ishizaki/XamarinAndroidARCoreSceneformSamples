@@ -1,0 +1,6 @@
+﻿<metadata>
+  <remove-node path="/api/package[@name='com.google.ar.sceneform.collision']/class[@name='Box']" />
+  <remove-node path="/api/package[@name='com.google.ar.sceneform.collision']/class[@name='Sphere']" />
+  <remove-node path="/api/package[@name='com.google.ar.sceneform.math']/class[@name='QuaternionEvaluator']" />
+  <remove-node path="/api/package[@name='com.google.ar.sceneform.math']/class[@name='Vector3Evaluator']" />
+</metadata>

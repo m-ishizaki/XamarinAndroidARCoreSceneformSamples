@@ -26,7 +26,7 @@ using Android.Support.V7.App;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
-using Com.Google.AR.Core;
+using Google.AR.Core;
 using Com.Google.AR.Sceneform;
 using Com.Google.AR.Sceneform.Rendering;
 using Com.Google.AR.Sceneform.UX;
@@ -105,7 +105,7 @@ namespace HelloSceneform
                 if (andyRenderable == null) { return; }
 
                 // Create the Anchor.
-                Com.Google.AR.Core.Anchor anchor = hitResult.CreateAnchor();
+                Anchor anchor = hitResult.CreateAnchor();
                 AnchorNode anchorNode = new AnchorNode(anchor);
                 anchorNode.SetParent(arFragment.ArSceneView.Scene);
 

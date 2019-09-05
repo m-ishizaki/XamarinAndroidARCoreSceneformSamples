@@ -1,0 +1,14 @@
+﻿<metadata>
+  <remove-node path="/api/package[@name='com.google.ar.sceneform.animation']/class[@name='ModelAnimator']/method[@name='getStartDelay' and count(parameter)=0]" />
+  <remove-node path="/api/package[@name='com.google.ar.sceneform.animation']/class[@name='ModelAnimator']/method[@name='setStartDelay' and count(parameter)=1 and parameter[1][@type='long']]" />
+
+  <attr path="/api/package[@name='com.google.ar.sceneform.animation']/class[@name='ModelAnimator']/method[@name='setDuration' and count(parameter)=1 and parameter[1][@type='long']]"
+        name="return">Android.Animation.Animator</attr>
+
+  <remove-node path="/api/package[@name='com/google/sceneform_animation']/class[@name='IWInvoker']"/>
+
+  <remove-node path="/api/package[@name='com.google.sceneform_animation']/interface[@name='W']/method[@name='setShowAsAction' and count(parameter)=1 and parameter[1][@type='int']]"/>
+  <remove-node path="/api/package[@name='com.google.sceneform_animation']/interface[@name='W']/method[@name='setShowAsActionFlags' and count(parameter)=1 and parameter[1][@type='int']]"/>
+
+  <remove-node path="/api/package[@name='com.google.ar.sceneform.animation']/class[@name='AnimationEngine']" />
+</metadata>

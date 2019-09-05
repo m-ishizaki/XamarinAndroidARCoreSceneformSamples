@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SceneformUX", "BindingLibra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloSceneform", "Samples\HelloSceneform\HelloSceneform.csproj", "{AD731032-F62D-4160-B3A8-7D26C67ED1AD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Animation", "Samples\Animation\Animation.csproj", "{5B5EE248-AF30-4254-BFDB-5F525F87A0D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SceneformAnimation", "BindingLibraries\SceneformAnimation\SceneformAnimation.csproj", "{2E58692A-BAD0-4262-9313-B72538443212}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,16 @@ Global
 		{AD731032-F62D-4160-B3A8-7D26C67ED1AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD731032-F62D-4160-B3A8-7D26C67ED1AD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AD731032-F62D-4160-B3A8-7D26C67ED1AD}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{5B5EE248-AF30-4254-BFDB-5F525F87A0D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B5EE248-AF30-4254-BFDB-5F525F87A0D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B5EE248-AF30-4254-BFDB-5F525F87A0D3}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5B5EE248-AF30-4254-BFDB-5F525F87A0D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B5EE248-AF30-4254-BFDB-5F525F87A0D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B5EE248-AF30-4254-BFDB-5F525F87A0D3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{2E58692A-BAD0-4262-9313-B72538443212}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E58692A-BAD0-4262-9313-B72538443212}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E58692A-BAD0-4262-9313-B72538443212}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E58692A-BAD0-4262-9313-B72538443212}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,6 +76,8 @@ Global
 		{01C84FF6-966F-45A3-ACAC-D60F116F18F7} = {F80B1B4C-BD57-4D6B-A9F0-2E1A8B0AC45E}
 		{9E2629F1-4D56-4840-B9F9-DD66DD33CED3} = {F80B1B4C-BD57-4D6B-A9F0-2E1A8B0AC45E}
 		{AD731032-F62D-4160-B3A8-7D26C67ED1AD} = {8E6727A9-2885-4DF5-8157-DD06BD7AA3B8}
+		{5B5EE248-AF30-4254-BFDB-5F525F87A0D3} = {8E6727A9-2885-4DF5-8157-DD06BD7AA3B8}
+		{2E58692A-BAD0-4262-9313-B72538443212} = {F80B1B4C-BD57-4D6B-A9F0-2E1A8B0AC45E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4B77F763-AD38-4EC3-83EC-5F720846B98D}

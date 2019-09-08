@@ -21,7 +21,8 @@
 
 using Android.Runtime;
 using Android.Util;
-using Com.Google.AR.Sceneform.Rendering;
+using Google.AR.Sceneform.Rendering;
+using IListnerActions;
 using Java.Lang;
 using Java.Util.Concurrent;
 
@@ -71,7 +72,7 @@ namespace Animation
                 return false;
             }
             CompletableFuture future =
-                (CompletableFuture)ModelRenderable.CreateBuilder()
+                (CompletableFuture)ModelRenderable.InvokeBuilder()
                     .SetSource((MainActivity)owner.Get(), resourceId)
                     .Build()
                     .ThenApply(new Function(renderable => this.SetRenderable(id, (ModelRenderable)renderable)))

@@ -20,7 +20,7 @@
 */
 
 using Android;
-using Com.Google.AR.Sceneform.UX;
+using Google.AR.Sceneform.UX;
 
 
 namespace Animation

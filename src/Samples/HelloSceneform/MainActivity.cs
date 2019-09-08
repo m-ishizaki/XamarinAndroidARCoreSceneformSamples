@@ -27,11 +27,10 @@ using Android.Util;
 using Android.Views;
 using Android.Widget;
 using Google.AR.Core;
-using Com.Google.AR.Sceneform;
-using Com.Google.AR.Sceneform.Rendering;
-using Com.Google.AR.Sceneform.UX;
-using System;
-using static Com.Google.AR.Sceneform.UX.BaseArFragment;
+using Google.AR.Sceneform;
+using Google.AR.Sceneform.Rendering;
+using Google.AR.Sceneform.UX;
+using IListnerActions;
 
 namespace HelloSceneform
 {
@@ -43,33 +42,6 @@ namespace HelloSceneform
 
         private ArFragment arFragment;
         public ModelRenderable andyRenderable;
-
-        class Consumer : Java.Lang.Object, Java.Util.Functions.IConsumer
-        {
-            Action<Java.Lang.Object> _action;
-
-            public Consumer(Action<Java.Lang.Object> action) => _action = action;
-
-            public void Accept(Java.Lang.Object t) => _action?.Invoke(t);
-        }
-
-        class OnTapArPlaneListener : Java.Lang.Object, IOnTapArPlaneListener
-        {
-            Action<HitResult, Plane, MotionEvent> _action;
-
-            public OnTapArPlaneListener(Action<HitResult, Plane, MotionEvent> action) => _action = action;
-
-            public void OnTapPlane(HitResult hitResult, Plane plane, MotionEvent motionEvent) => _action?.Invoke(hitResult, plane, motionEvent);
-        }
-
-        class Function : Java.Lang.Object, Java.Util.Functions.IFunction
-        {
-            Func<Java.Lang.Object, Java.Lang.Object> _action;
-
-            public Function(Func<Java.Lang.Object, Java.Lang.Object> action) => _action = action;
-
-            public Java.Lang.Object Apply(Java.Lang.Object t) => _action?.Invoke(t);
-        }
 
         // CompletableFuture requires api level 24
         // FutureReturnValueIgnored is not valid
@@ -87,7 +59,7 @@ namespace HelloSceneform
 
             // When you build a Renderable, Sceneform loads its resources in the background while returning
             // a CompletableFuture. Call thenAccept(), handle(), or check isDone() before calling get().
-            ModelRenderable.CreateBuilder()
+            ModelRenderable.InvokeBuilder()
             .SetSource(this, Resource.Raw.andy)
                 .Build()
                 .ThenAccept(new Consumer(t => andyRenderable = (ModelRenderable)t))

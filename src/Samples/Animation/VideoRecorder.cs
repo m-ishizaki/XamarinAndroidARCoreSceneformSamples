@@ -23,7 +23,7 @@ using Android.Media;
 using Android.OS;
 using Android.Util;
 using Android.Views;
-using Com.Google.AR.Sceneform;
+using Google.AR.Sceneform;
 using Java.IO;
 
 namespace Animation
